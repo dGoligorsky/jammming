@@ -8,6 +8,14 @@ class Track extends React.Component {
     this.removeTrack = this.removeTrack.bind(this);
   }
 
+  addTrack() {
+    this.props.onAdd(this.props.track);
+  }
+
+  removeTrack() {
+    this.props.onRemove(this.props.track);
+  }
+
   renderAction() {
     if (this.props.isRemoval) {
       return (
@@ -22,14 +30,6 @@ class Track extends React.Component {
         </button>
       );
     }
-  }
-
-  addTrack() {
-    this.props.onAdd(this.props.track);
-  }
-
-  removeTrack() {
-    this.props.onRemove(this.props.track);
   }
 
   render() {
