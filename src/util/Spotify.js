@@ -1,6 +1,6 @@
-const clientId = "b66e444921fa4a9c80d71b25691c68a8";
-// const redirectUri = "http://localhost:3000/"; //local
-const redirectUri = "dgjammmingexperiment.surge.sh"; //production
+const clientId = "YOUR_CLIENT_ID";
+const redirectUri = "http://localhost:3000/"; //local
+// const redirectUri = "PRODUCTION_SITE.SURGE.SH"; //production
 let accessToken;
 
 const Spotify = {
